@@ -1,18 +1,15 @@
 import './App.css';
 import './Sidebar'
 import Sidebar from './Sidebar';
+import Feed from './Feed';
+import Widgets from './Widgets'
 
 function App() {
   return (
     <div className="app">
-        <h1>hello twitter clone coming soon</h1>
-
-        {/* Sidebar */}
-        <Sidebar />
-
-        {/* Feed */}
-
-        {/* Widgets */}
+        <Sidebar/>
+        <Feed/>
+        <Widgets/>
 
     </div>
   );

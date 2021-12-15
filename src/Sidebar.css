@@ -1,3 +1,11 @@
+.sidebar {
+    border-right: .5px solid rgb(233, 232, 232);
+    flex: 0.25;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .sidebar__tweet {
     background-color: var(--twitter-color) !important;
     color: white !important;
@@ -6,4 +14,8 @@
     border-radius: 30px !important;
     height: 50px !important;
     margin-top: 20px !important;
+}
+
+.sidebar__twitterIcon {
+    background-color: var(--twitter-color) !important;
 }
