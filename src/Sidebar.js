@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Sidebar.css"
-import HomeIcon from '@mui/icons-material/Home';
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
@@ -10,14 +10,15 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SidebarBtn from './SidebarBtn';
+import Button from '@mui/material/Button';
+
 
 function Sidebar() {
     return (
         <div className="sidebar">
-            {/* Twitter Icon */}
             <TwitterIcon />
 
-            <SidebarBtn text="Home" Icon={HomeIcon}/>
+            <SidebarBtn active text="Home" Icon={HomeOutlinedIcon}/>
             <SidebarBtn text="Explore" Icon={SearchIcon}/>
             <SidebarBtn text="Notifications" Icon={NotificationsNoneIcon}/>
             <SidebarBtn text="Messages" Icon={MailOutlineIcon}/>
@@ -25,13 +26,9 @@ function Sidebar() {
             <SidebarBtn text="Lists" Icon={ListAltIcon}/>
             <SidebarBtn text="Profile" Icon={PersonOutlineIcon}/>
             <SidebarBtn text="More" Icon={MoreHorizIcon}/>
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
-            {/* SidebarOption */}
+           
 
-            {/* Button -> tweet */}
+            <Button variant="contained">Tweet</Button>
             
         </div>
     )

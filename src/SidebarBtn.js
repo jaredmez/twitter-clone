@@ -1,9 +1,9 @@
 import React from 'react'
 import './SidebarBtn.css'
 
-function SidebarBtn({ text, Icon}) {
+function SidebarBtn({ active, text, Icon}) {
     return (
-        <div className='sidebarBtn'>
+        <div className={`sidebarBtn ${active && 'sidebarBtn--active'}`}>
             <Icon />
             <h2>{text}</h2>
             
