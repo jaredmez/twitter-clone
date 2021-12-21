@@ -24,9 +24,10 @@ function Post( {
           <div className="post__header">
             <div className="post__headerText">
               <h3>
-                JaredMez 
-                <span>
+                JaredM 
+                <span className="post__headerUser">
                   <VerifiedIcon className="post__badge"></VerifiedIcon>
+                  @jarednAtlanta
                 </span>
               </h3>
             </div>
