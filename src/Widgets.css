@@ -1,3 +1,43 @@
 .widgets {
     flex: 0.3;
 }
+
+.widgets__input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+
+.widgets__input > input {
+    border: none;
+    background-color: rgb(238, 238, 238);
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.widgets__input > input:focus {
+    outline: none;
+}
+
+.widgets__searchIcon {
+    color: grey;
+}
+
+.widgets__widgetContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 20px;
+
+    background-color: rgb(238, 238, 238);
+}
+
+.widgets__widgetContainer > h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
