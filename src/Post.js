@@ -24,18 +24,18 @@ function Post( {
           <div className="post__header">
             <div className="post__headerText">
               <h3>
-                JaredM 
+                {displayName}
                 <span className="post__headerUser">
-                  <VerifiedIcon className="post__badge"></VerifiedIcon>
-                  @jarednAtlanta
+                  {verified && <VerifiedIcon  className="post__badge"></VerifiedIcon>}
+                  @{username}
                 </span>
               </h3>
             </div>
             <div className="post__headerDescription">
-              <p>Here is the text for this post.</p>
+              <p>{text}</p>
             </div>
           </div>
-          <img src="https://media1.giphy.com/media/xTOxl052neakq3bvPv/giphy.gif" />
+          <img src={image} />
           <div className="post__footer">
             <ChatBubbleOutlineOutlinedIcon></ChatBubbleOutlineOutlinedIcon>
             <RepeatIcon></RepeatIcon>
