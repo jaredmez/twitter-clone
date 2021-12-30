@@ -3,7 +3,7 @@ import './Feed.css'
 import TweetBox from './TweetBox'
 import Post from './Post'
 import db from './firebase'
-import {collection, getDocs} from "firebase/firestore/lite";
+import {collection, getDocs} from "firebase/firestore";
 
 function Feed() {
   const [posts, setPosts] =  React.useState([])
@@ -42,7 +42,8 @@ function Feed() {
 
           <TweetBox/>
           {posts.map(post => (
-            <Post 
+            <Post
+            key={post.text} 
             displayName={post.displayName}
             username={post.username}
             verifed={post.verified}
