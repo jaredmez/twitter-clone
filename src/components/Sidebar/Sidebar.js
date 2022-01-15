@@ -9,7 +9,7 @@ import ListAltIcon from '@mui/icons-material/ListAlt';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import SidebarBtn from './SidebarBtn';
+import SidebarBtn from '../SidebarBtn/SidebarBtn';
 import Button from '@mui/material/Button';
 
 
